@@ -20,7 +20,17 @@ Point your browser at http://localhost:8080 and you'll see the familiar My UW fr
 
 ### Adding your content
 
-TODO
+The unique aspect about this project is that it overlays [angularjs-portal-frame](https://github.com/UW-Madison-DoIT/angularjs-portal).
+That project provides us the frame that My UW uses: the header, the sidebar, and the footer. It provides
+us an extension point in a file with a specific name: [my-app.js](my-app-seed-war/src/main/webapp/my-app.js).
+
+In that file you can see that we reference a variable named `app`; this variable is the result of [angular.module](https://docs.angularjs.org/api/ng/type/angular.Module)
+that was provided by angularjs-portal-frame.
+
+With that reference we can use Angular to register controllers, services, directives, you name it.
+
+The example in this project simply adds a new [Angular Route](https://docs.angularjs.org/api/ngRoute/service/$route) called
+'default' that loads the contents of [my-app.html](my-app-seed-war/src/main/webapp/my-app.html) into the frame.
 
 ### Why is this a multi-module project?
 
