@@ -12,9 +12,9 @@ appropriate for interacting with UW's [Maven Artifact Repository](https://wiki.d
 
 ### Getting started
 
-1. git clone git@github.com:UW-Madison-DoIT/my-app-seed.git your-app-name
-2. cd your-app-name
-3. mvn install jetty:run-war
+1. `git clone git@github.com:UW-Madison-DoIT/my-app-seed.git your-app-name`
+2. `cd your-app-name`
+3. `mvn install jetty:run-war`
 
 Point your browser at http://localhost:8080 and you'll see the familiar My UW frame.
 
