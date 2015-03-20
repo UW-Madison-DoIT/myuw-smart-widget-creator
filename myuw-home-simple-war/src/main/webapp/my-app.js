@@ -20,6 +20,16 @@
   
   app.controller("GenericWidgetController",['$scope', '$route', '$localStorage', function($scope, $route, $localStorage){
     $scope.storage = $localStorage;
+    
+    var validJSON = function isValidJson(json) {
+      try {
+          JSON.parse(json);
+          return true;
+      } catch (e) {
+          return false;
+      }
+	}
+    
     var init = function(){
       $scope.storage.isEmpty = false;
       $scope.storage.template = "";
@@ -36,14 +46,22 @@
     } else {
       $scope.template = $scope.storage.template;
       $scope.portlet = $scope.storage.portlet;
-      $scope.content = $scope.storage.content;
       $scope.isEmpty = $scope.storage.isEmpty;
+      
+      if(validJSON($scope.storage.content)) {
+      	$scope.content = JSON.parse($scope.storage.content);
+      } else {
+        $scope.content = {}
+        $scope.errorJSON = "JSON NOT VALID";
+      }
       
     }
    
     $scope.reload = function(){
       $route.reload();
     };
+    
+    
     
   }]);
 

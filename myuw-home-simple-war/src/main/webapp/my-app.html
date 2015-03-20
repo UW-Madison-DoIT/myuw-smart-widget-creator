@@ -29,7 +29,7 @@
             </h3>
             <form>
               <div class="form-group">
-                <label for="content">JSON Example</label>
+                <label for="content">JSON Example <span style='color : red;'>{{$scope.errorJSON}}</span></label>
                 <textarea class="form-control" rows="2"  ng-model="storage.content" id='content'></textarea>
               </div>
               <div class="form-group">
