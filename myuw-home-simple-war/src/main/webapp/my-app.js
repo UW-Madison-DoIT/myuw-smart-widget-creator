@@ -5,6 +5,8 @@
 	app.config(['$routeProvider', function($routeProvider) {
 			$routeProvider.when('/default', {
 				templateUrl: 'my-app.html'
+			}).when('/samples', {
+				templateUrl: 'my-app.html'
 			}).otherwise({
 				redirectTo: '/default'
 			});

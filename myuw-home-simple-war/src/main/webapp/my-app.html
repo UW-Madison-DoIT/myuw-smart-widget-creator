@@ -6,7 +6,7 @@
         <ul class="tile-list container-fluid row"  ng-controller="GenericWidgetController as genericWidgetCtrl">
           <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 list-container widget-content">
             <h3>
-              Dynamic Config
+              Config
             </h3>
             <form>
               <div class="form-group">
@@ -17,46 +17,33 @@
                 <label for="desc">Description</label>
                 <input type="input" class="form-control" id="desc" placeholder="Enter description" ng-model="storage.portlet.description">
               </div>
-              
             </form>
-          </li>
-          <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 list-container widget-content">
-          	<h3>
-              Refresh Config
-              <button ng-click='reload()' class='btn btn-primary'>
-                Refresh
-              </button>
-            </h3>
             <form>
               <div class="form-group">
-                <label for="content">JSON Example <span style='color : red;'>{{errorJSON}}</span></label>
-                <textarea class="form-control" rows="2"  ng-model="storage.content" id='content'></textarea>
-              </div>
-              <div class="form-group">
-                <label for="template">Template</label>
-                <textarea class="form-control" rows="3"  ng-model="storage.template" id='template'></textarea>
-              </div>
-            </form>
-           
-            
-          </li>
-          <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 list-container widget-content">
-          	<h3>
-              Refresh Config Part 2
-              <button ng-click='reload()' class='btn btn-primary'>
-                Refresh
-              </button>
-            </h3>
-            <form>
-              <div class="form-group">
-                <label for="evalString">Check for Empty evalString</label>
+                <label for="evalString">Check for Empty evalString *</label>
                 <input type="input" class="form-control" id="evalString" placeholder="Enter Eval string to check for empty" ng-model="storage.evalString">
               </div>
             </form>
-           
-            
           </li>
-          <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 list-container">
+          <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 list-container widget-content">
+          	<h3 class='input-group'>
+              Config Continued
+              <button ng-click='reload()' class='btn btn-primary'>
+                Refresh*
+              </button>
+            </h3>
+            <form>
+              <div class="form-group">
+                <label for="content">JSON Example* <span style='color : red;'>{{errorJSON}}</span></label>
+                <textarea class="form-control" rows="2"  ng-model="storage.content" id='content'></textarea>
+              </div>
+              <div class="form-group">
+                <label for="template">Template*</label>
+                <textarea class="form-control" rows="3"  ng-model="storage.template" id='template'></textarea>
+              </div>
+            </form>
+          </li>
+          <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 list-container no-padding">
             <widget-card class='col-'></widget-card>
           </li>
         </ul>
