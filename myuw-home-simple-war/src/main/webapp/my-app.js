@@ -41,20 +41,26 @@
       
       $scope.storage.inited = true;
     };
-    if(!$scope.storage.inited) {
-      init();
-    } else {
+    
+    var retInit = function() {
       $scope.template = $scope.storage.template;
       $scope.portlet = $scope.storage.portlet;
       $scope.isEmpty = $scope.storage.isEmpty;
       
-      if(validJSON($scope.storage.content)) {
+      if($scope.storage.content && validJSON($scope.storage.content)) {
       	$scope.content = JSON.parse($scope.storage.content);
+         $scope.isEmpty = $scope.storage.evalString ? eval($scope.storage.evalString) : false;
       } else {
         $scope.content = {}
-        $scope.errorJSON = "JSON NOT VALID";
+        $scope.isEmpty = true;
+        $scope.errorJSON = $scope.storage.content ? "JSON NOT VALID" : "";
       }
-      
+    }
+    if(!$scope.storage.inited) {
+      init();
+      retInit();
+    } else {
+      retInit();
     }
    
     $scope.reload = function(){
