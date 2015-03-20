@@ -6,7 +6,7 @@
 			$routeProvider.when('/default', {
 				templateUrl: 'my-app.html'
 			}).when('/samples', {
-				templateUrl: 'my-app.html'
+				templateUrl: 'samples.html'
 			}).otherwise({
 				redirectTo: '/default'
 			});
