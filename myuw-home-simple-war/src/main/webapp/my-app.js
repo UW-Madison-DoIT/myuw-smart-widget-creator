@@ -18,17 +18,33 @@
       }
   });
   
-  app.controller("GenericWidgetController",['$scope', function($scope){
+  app.controller("GenericWidgetController",['$scope', '$route', '$localStorage', function($scope, $route, $localStorage){
+    $scope.storage = $localStorage;
     var init = function(){
-      $scope.isEmpty = false;
-      $scope.template = "";
-      $scope.content = "";
-      $scope.portlet = {
+      $scope.storage.isEmpty = false;
+      $scope.storage.template = "";
+      $scope.storage.content = "";
+      $scope.storage.portlet = {
         title : "My Portlet",
         description : "This super cool portlet can change lives."
       };
+      
+      $scope.storage.inited = true;
     };
-    init();
+    if(!$scope.storage.inited) {
+      init();
+    } else {
+      $scope.template = $scope.storage.template;
+      $scope.portlet = $scope.storage.portlet;
+      $scope.content = $scope.storage.content;
+      $scope.isEmpty = $scope.storage.isEmpty;
+      
+    }
+   
+    $scope.reload = function(){
+      $route.reload();
+    };
+    
   }]);
 
 })();

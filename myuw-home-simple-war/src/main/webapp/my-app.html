@@ -1,14 +1,46 @@
 <div class="portlet-frame">
 	<portlet-header app-title="Widget Creator" app-image="img/square.jpg" app-description="Fill out the form, see your widget, copy/paste into entity file, done."></portlet-header>
 
-	<div class="portlet-body">
-		<div style='background-color: gray;'>
+	<div class="portlet-body"  style='background-color: gray;'>
+		<div>
         <ul class="tile-list container-fluid row"  ng-controller="GenericWidgetController as genericWidgetCtrl">
-          <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding list-container">
-            {{portlet.title}}
-            {{portlet.description}}
+          <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding list-container widget-content">
+            <h3>
+              Dynamic Config
+            </h3>
+            <form>
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input type="input" class="form-control" id="title" placeholder="Enter title" ng-model="storage.portlet.title">
+              </div>
+              <div class="form-group">
+                <label for="desc">Description</label>
+                <input type="input" class="form-control" id="desc" placeholder="Enter description" ng-model="storage.portlet.description">
+              </div>
+              
+            </form>
           </li>
-          <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding list-container">
+          <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 list-container widget-content">
+          	<h3>
+              Refresh Config
+              <button ng-click='reload()' class='btn btn-primary'>
+                Refresh
+              </button>
+            </h3>
+            <form>
+              <div class="form-group">
+                <label for="content">JSON Example</label>
+                <textarea class="form-control" rows="2"  ng-model="storage.content" id='content'></textarea>
+              </div>
+              <div class="form-group">
+                <label for="template">Template</label>
+                <textarea class="form-control" rows="3"  ng-model="storage.template" id='template'></textarea>
+              </div>
+            </form>
+           
+            
+          </li>
+          <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 list-container">
             <widget-card class='col-'></widget-card>
           </li>
         </ul>
