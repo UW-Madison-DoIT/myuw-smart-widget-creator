@@ -1,7 +1,0 @@
-{"sidebar" :  
-            [
-                {"title": "Widget Creator", "hyperlink" : "/#/", "target" : "", "faIcon" : "fa-building", "displayFlag" : ""},
-                {"title": "Sample Widgets", "hyperlink" : "/#/samples", "target" : "", "faIcon" : "fa-cogs", "displayFlag" : ""},
-                {"title": "Beta Settings", "hyperlink" : "#/settings", "target" : "", "faIcon" : "fa-cog", "displayFlag" : "sidebarShowSettings"}
-            ]
-}
