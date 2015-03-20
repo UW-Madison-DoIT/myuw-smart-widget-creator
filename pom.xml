@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>edu.wisc.my.app</groupId>
-	<artifactId>my-app-seed</artifactId>
+   <groupId>edu.wisc.my.app</groupId>
+	<artifactId>myuw-home-simple</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>My App Seed Parent</name>
-	<description>Parent pom for seed project demonstrating how to write "apps" for My UW Madison.</description>
+	<name>MyUW simple home Parent</name>
+	<description>Dev tools for creating cool stuff.</description>
 
 	<repositories>
 		<repository>
@@ -61,6 +61,6 @@
 	</build>
 
 	<modules>
-		<module>my-app-seed-war</module>
+		<module>myuw-home-simple-war</module>
 	</modules>
 </project>

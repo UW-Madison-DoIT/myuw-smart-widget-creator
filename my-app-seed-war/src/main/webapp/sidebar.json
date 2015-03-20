@@ -1,0 +1,7 @@
+{"sidebar" :  
+            [
+                {"title": "Home", "hyperlink" : "/#/", "target" : "", "faIcon" : "fa-home", "displayFlag" : ""},
+                {"title": "Sample Widgets", "hyperlink" : "/#/widgets", "target" : "", "faIcon" : "fa-cogs", "displayFlag" : ""},
+                {"title": "Beta Settings", "hyperlink" : "#/settings", "target" : "", "faIcon" : "fa-cog", "displayFlag" : "sidebarShowSettings"}
+            ]
+}

@@ -1,17 +1,17 @@
 <div class="portlet-frame">
-	<portlet-header app-title="My App Title" app-image="img/square.jpg" app-description="Optional app description."></portlet-header>
+	<portlet-header app-title="Widget Creator" app-image="img/square.jpg" app-description="Fill out the form, see your widget, copy/paste into entity file, done."></portlet-header>
 
 	<div class="portlet-body">
-		<!-- App Navigation if Needed -->
-		<div class="inner-nav-container">
-			<ul class="inner-nav">
-				<li class="active"><a href="#/default">View 1</a></li>
-				<li><a href="#/view2">View 2</a></li>
-			</ul>
-		</div>
-		<div class="page-content">
-			<h3 class="center">Content for view 1</h3>
-			<p class="center">Some text.</p>
-		</div>
+		<div style='background-color: gray;'>
+        <ul class="tile-list container-fluid row"  ng-controller="GenericWidgetController as genericWidgetCtrl">
+          <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding list-container">
+            {{portlet.title}}
+            {{portlet.description}}
+          </li>
+          <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding list-container">
+            <widget-card class='col-'></widget-card>
+          </li>
+        </ul>
+      </div>		
 	</div>
 </div>

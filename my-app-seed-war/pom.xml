@@ -3,10 +3,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>edu.wisc.my.app</groupId>
-		<artifactId>my-app-seed</artifactId>
+		<artifactId>myuw-home-simple</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>my-app-seed-war</artifactId>
+	<artifactId>myuw-home-simple-war</artifactId>
 	<name>My App Seed War</name>
 	<description>Web application for My UW app seed project.</description>
 	<packaging>war</packaging>
