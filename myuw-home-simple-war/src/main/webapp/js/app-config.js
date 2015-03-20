@@ -3,7 +3,7 @@
 angular.module('app-config', [])
 .constant('SERVICE_LOC', {
                            'sessionInfo' : 'json/sessionsample.json',
-                           'sidebarInfo' : 'json/sidebar.json'
+                           'sidebarInfo' : 'sidebar.json'
                           });
 
 })();
