@@ -3,12 +3,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>edu.wisc.my.app</groupId>
-		<artifactId>myuw-home-simple</artifactId>
+		<artifactId>myuw-smart-widget-creator</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>myuw-home-simple-war</artifactId>
-	<name>My App Seed War</name>
-	<description>Web application for My UW app seed project.</description>
+	<artifactId>myuw-smart-widget-creator-war</artifactId>
+	<name>MyUW Smart Widget Creator</name>
+	<description>Web application for Creating Smart Widgets.</description>
 	<packaging>war</packaging>
 
 	<dependencies>

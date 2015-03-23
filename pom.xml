@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
         <groupId>edu.wisc.my.app</groupId>
-	<artifactId>myuw-home-simple</artifactId>
+	<artifactId>myuw-smart-widget-creator</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>MyUW simple home Parent</name>
+	<name>MyUW Widget Creator Parent</name>
 	<description>Dev tools for creating cool stuff.</description>
 
 	<repositories>
@@ -61,6 +61,6 @@
 	</build>
 
 	<modules>
-		<module>myuw-home-simple-war</module>
+		<module>myuw-smart-widget-creator-war</module>
 	</modules>
 </project>
