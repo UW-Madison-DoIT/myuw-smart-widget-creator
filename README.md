@@ -15,7 +15,7 @@ appropriate for interacting with UW's [Maven Artifact Repository](https://wiki.d
 
 Point your browser at http://localhost:8080 and you'll see the familiar My UW frame. 
 
-#### Running on Codenvy
+#### Running on Codenvy [![alt](https://codenvy.com/factory/resources/factory-white.png)](https://codenvy.com/ide-resources/share/project/timlevett/myuw-home-simple)
 
 * Create an account on `https://codenvy.com/`
 * Clone this repo
