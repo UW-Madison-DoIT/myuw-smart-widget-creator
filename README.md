@@ -9,10 +9,19 @@ appropriate for interacting with UW's [Maven Artifact Repository](https://wiki.d
 
 ### Getting started
 
+#### Running Locally
+
 `mvn install jetty:run-war`
 
 Point your browser at http://localhost:8080 and you'll see the familiar My UW frame. 
 
+#### Running on Codenvy
+
+Create an account on `https://codenvy.com/`
+Clone this repo
+run it as a maven project
+
 This app has 2 pages for now:
 1) Widget Creator
 2) Example Widgets
+
