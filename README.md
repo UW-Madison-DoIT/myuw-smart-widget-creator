@@ -1,4 +1,4 @@
-## My UW Home Simple
+## MyUW Smart Widget Creator
 
 This simple maven application is a development tool to create smart widgets without having the burden of trying to startup your own uPortal instance.
 
@@ -13,7 +13,7 @@ appropriate for interacting with UW's [Maven Artifact Repository](https://wiki.d
 
 `mvn install jetty:run-war`
 
-Point your browser at http://localhost:8080 and you'll see the familiar My UW frame. 
+Point your browser at http://localhost:8080 and you'll see the familiar My UW frame with the widget creator. 
 
 #### Running on Codenvy
 
@@ -23,6 +23,9 @@ Point your browser at http://localhost:8080 and you'll see the familiar My UW fr
 * You will need to allow popups for everything to work.
 * Clicking the giant green play button will launch application in a docker instance and give you a url to test
 * Run it as a maven project
+* 
+#### Permanant Home
+* Coming soon
 
 #### What is this?
 
