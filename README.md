@@ -23,7 +23,8 @@ Point your browser at http://localhost:8080 and you'll see the familiar My UW fr
 * You will need to allow popups for everything to work.
 * Clicking the giant green play button will launch application in a docker instance and give you a url to test
 * Run it as a maven project
-* 
+
+
 #### Permanant Home
 * Coming soon
 
