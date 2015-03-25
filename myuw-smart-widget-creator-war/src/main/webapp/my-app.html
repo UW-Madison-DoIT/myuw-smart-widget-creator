@@ -3,7 +3,7 @@
 
 	<div class="portlet-body tile-list">
      <div class="row"  ng-controller="GenericWidgetController as genericWidgetCtrl">
-       <div class="col-xs-6">
+       <div class="col-sm-6">
          <h3>Config</h3>
          <form>
            <div class="form-group">
@@ -24,7 +24,7 @@
          <form>
            <div class="choose-template">
              <label for="starter-template">Choose a starter template</label>
-             <select id='starter-template' ng-model="storage.starterTemplate" ng-options="starterTemplate as starterTemplate.name for starterTemplate in starterTemplates"></select>
+             <select id='starter-template' ng-model='storage.starterTemplate' ng-change='changeTemplate()' ng-options="starterTemplate as starterTemplate.name for starterTemplate in starterTemplates"></select>
            </div>
            <div class="form-group">
              <label for="template">Template*</label>
@@ -37,7 +37,7 @@
          </form>
          <button ng-click='reload()' class='btn btn-primary center'>Refresh*</button>
        </div>
-    	 <div class="col-xs-6">
+    	 <div class="col-sm-6">
          <div class="list-container col-xs-6 col-xs-offset-3 no-padding output">
            <widget-card></widget-card>
          </div>
