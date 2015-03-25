@@ -1,52 +1,61 @@
 <div class="portlet-frame">
 	<portlet-header app-title="Widget Creator" app-image="img/square.jpg" app-description="Fill out the form, see your widget, copy/paste into entity file, done."></portlet-header>
 
-	<div class="portlet-body"  style='background-color: gray;'>
-		<div>
-        <ul class="tile-list container-fluid row"  ng-controller="GenericWidgetController as genericWidgetCtrl">
-          <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 list-container widget-content">
-            <h3>
-              Config
-            </h3>
-            <form>
-              <div class="form-group">
-                <label for="title">Title</label>
-                <input type="input" class="form-control" id="title" placeholder="Enter title" ng-model="storage.portlet.title">
-              </div>
-              <div class="form-group">
-                <label for="desc">Description</label>
-                <input type="input" class="form-control" id="desc" placeholder="Enter description" ng-model="storage.portlet.description">
-              </div>
-            </form>
-            <form>
-              <div class="form-group">
-                <label for="evalString">Check for Empty evalString *</label>
-                <input type="input" class="form-control" id="evalString" placeholder="Enter Eval string to check for empty" ng-model="storage.evalString">
-              </div>
-            </form>
-          </li>
-          <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 list-container widget-content">
-          	<h3 class='input-group'>
-              More Config
-              <button ng-click='reload()' class='btn btn-primary'>
-                Refresh*
-              </button>
-            </h3>
-            <form>
-              <div class="form-group">
-                <label for="content">JSON Example* <span style='color : red;'>{{errorJSON}}</span></label>
-                <textarea class="form-control" rows="2"  ng-model="storage.content" id='content'></textarea>
-              </div>
-              <div class="form-group">
-                <label for="template">Template*</label>
-                <textarea class="form-control" rows="3"  ng-model="storage.template" id='template'></textarea>
-              </div>
-            </form>
-          </li>
-          <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 list-container no-padding">
-            <widget-card class='col-'></widget-card>
-          </li>
-        </ul>
-      </div>		
-	</div>
+	<div class="portlet-body tile-list">
+     <div class="row"  ng-controller="GenericWidgetController as genericWidgetCtrl">
+       <div class="col-xs-6">
+         <h3>Config</h3>
+         <form>
+           <div class="form-group">
+             <label for="title">Title</label>
+             <input type="input" class="form-control" id="title" placeholder="Enter title" ng-model="storage.portlet.title">
+           </div>
+           <div class="form-group">
+             <label for="desc">Description</label>
+             <input type="input" class="form-control" id="desc" placeholder="Enter description" ng-model="storage.portlet.description">
+           </div>
+         </form>
+         <form>
+           <div class="form-group">
+             <label for="evalString">Check for Empty evalString *</label>
+             <input type="input" class="form-control" id="evalString" placeholder="Enter Eval string to check for empty" ng-model="storage.evalString">
+           </div>
+         </form>         
+         <form>
+           <div class="choose-template">
+             <label for="starter-template">Choose a starter template</label>
+             <select id='starter-template' ng-model="storage.starterTemplate" ng-options="starterTemplate as starterTemplate.name for starterTemplate in starterTemplates"></select>
+           </div>
+           <div class="form-group">
+             <label for="template">Template*</label>
+             <textarea class="form-control" rows="3"  ng-model="storage.template" id='template'></textarea>
+           </div>
+           <div class="form-group">
+             <label for="content">JSON Example* <span style='color : red;'>{{errorJSON}}</span></label>
+             <textarea class="form-control" rows="2"  ng-model="storage.content" id='content'></textarea>
+           </div>
+         </form>
+         <button ng-click='reload()' class='btn btn-primary center'>Refresh*</button>
+       </div>
+    	 <div class="col-xs-6">
+         <div class="list-container col-xs-6 col-xs-offset-3 no-padding output">
+           <widget-card></widget-card>
+         </div>
+       </div>
+     </div>
+   </div>		
 </div>
+<style>
+	.output {
+     margin-top:60px;
+     max-width:290px;
+     min-width:230px
+   }
+  textarea {
+    height:200px !important;
+  }
+  center {
+    text-align:center;
+  }
+  
+</style>
