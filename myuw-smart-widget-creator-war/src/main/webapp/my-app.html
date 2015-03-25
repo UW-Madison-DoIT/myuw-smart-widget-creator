@@ -24,7 +24,7 @@
          <form>
            <div class="choose-template">
              <label for="starter-template">Choose a starter template</label>
-             <select id='starter-template' ng-model='storage.starterTemplate' ng-change='changeTemplate()' ng-options="starterTemplate as starterTemplate.name for starterTemplate in starterTemplates"></select>
+             <select id='starter-template' ng-model='storage.starterTemplate' ng-change='changeTemplate()' ng-options="starterTemplate as starterTemplate.name for starterTemplate in storage.starterTemplates"></select>
            </div>
            <div class="form-group">
              <label for="template">Template*</label>
