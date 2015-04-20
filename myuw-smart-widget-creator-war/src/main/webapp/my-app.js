@@ -19,6 +19,36 @@ define([], function() {
       }
   });
   
+  app.controller("WidgetSampleController", ['$scope', function($scope){
+      
+      var validJSON = function isValidJson(json) {
+        try {
+            JSON.parse(json);
+            return true;
+        } catch (e) {
+            return false;
+        }
+      }
+      
+      var init = function() {
+          $scope.template = $scope.portlet.template;
+          var content = $scope.portlet.content;
+          
+          if(content && validJSON(content)) {
+              $scope.content = JSON.parse(content);
+               $scope.isEmpty = false;
+          } else {
+              $scope.content = {}
+              $scope.isEmpty = true;
+              $scope.errorJSON = $scope.storage.content ? "JSON NOT VALID" : "";
+          }
+          
+          
+      }
+      
+      init();
+  }]);
+  
   app.controller("GenericWidgetController",['$http', '$scope', '$route', '$localStorage', function($http, $scope, $route, $localStorage){
     $scope.storage = $localStorage;
     
@@ -29,7 +59,7 @@ define([], function() {
       } catch (e) {
           return false;
       }
-  }
+    }
     
     var init = function(){
       $scope.storage.isEmpty = false;
@@ -73,12 +103,17 @@ define([], function() {
       $route.reload();
     };
     
-    $scope.changeTemplate = function() {
-      $scope.storage.template = $scope.storage.starterTemplate.template;
-      $scope.storage.content = $scope.storage.starterTemplate.jsonStr;
+    $scope.clear = function() {
+        if(confirm("Are you sure, all your config will be cleared")) {
+            init();
+            $route.reload();
+        }
     }
     
-    
-    
+    $scope.changeTemplate = function() {
+      $scope.storage.template = $scope.storage.starterTemplate.template;
+      $scope.storage.content = $scope.storage.starterTemplate.content;
+      $scope.storage.title= $scope.storage.starterTemplate.title;
+    }
   }]);
 });

@@ -1,9 +1,9 @@
 {
   "person": {
-   "userName": "admin",
-   "sessionKey": "someRandomKey",
+   "userName": "nil",
+   "sessionKey": "sessionKeyPlaceholder",
    "serverName": "local",
-   "displayName": "Aaron Administrator",
-   "version": "4.1.1.18-SNAPSHOT"
+   "displayName": "Widget Wizard",
+   "version": "4.1.1.19-SNAPSHOT"
   }
 }
