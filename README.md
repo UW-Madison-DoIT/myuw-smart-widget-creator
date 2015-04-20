@@ -1,5 +1,7 @@
 ## MyUW Smart Widget Creator
 
+![https://travis-ci.org/UW-Madison-DoIT/myuw-smart-widget-creator.svg?branch=master](https://travis-ci.org/UW-Madison-DoIT/myuw-smart-widget-creator.svg?branch=master)
+
 This simple maven application is a development tool to create smart widgets without having the burden of trying to startup your own uPortal instance.
 
 ### Requirements
