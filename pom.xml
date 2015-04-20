@@ -8,6 +8,10 @@
 	<name>MyUW Widget Creator Parent</name>
 	<description>Dev tools for creating cool stuff.</description>
 
+	<properties>
+    	<basename></basename>
+  	</properties>
+
 	<repositories>
 		<repository>
 			<id>code.doit-uw-releases</id>
@@ -27,6 +31,15 @@
 	</dependencyManagement>
 
 	<build>
+		<resources>
+	        <resource>
+	            <directory>src/main/webapp</directory>
+	            <includes>
+	                <include>frame.html</include>
+	            </includes>
+	            <filtering>true</filtering>
+	        </resource>
+	    </resources>
 		<pluginManagement>
 			<plugins>
 				<plugin>

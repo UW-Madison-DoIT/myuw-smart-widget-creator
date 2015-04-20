@@ -1,17 +1,16 @@
 'use strict';
 
-(function() {
-	
-	app.config(['$routeProvider', function($routeProvider) {
-			$routeProvider.when('/default', {
-				templateUrl: 'my-app.html'
-			}).when('/samples', {
-				templateUrl: 'samples.html'
-			}).otherwise({
-				redirectTo: '/default'
-			});
-		}
-	]);
+define([], function() {
+    app.config(['$routeProvider', function($routeProvider) {
+      $routeProvider.when('/default', {
+        templateUrl: 'my-app.html'
+      }).when('/samples', {
+        templateUrl: 'samples.html'
+      }).otherwise({
+        redirectTo: '/default'
+      });
+    }
+  ]);
   
   app.directive('widgetCard', function(){
       return {
@@ -30,7 +29,7 @@
       } catch (e) {
           return false;
       }
-	}
+  }
     
     var init = function(){
       $scope.storage.isEmpty = false;
@@ -55,7 +54,7 @@
       $scope.isEmpty = $scope.storage.isEmpty;
       
       if($scope.storage.content && validJSON($scope.storage.content)) {
-      	$scope.content = JSON.parse($scope.storage.content);
+        $scope.content = JSON.parse($scope.storage.content);
          $scope.isEmpty = $scope.storage.evalString ? eval($scope.storage.evalString) : false;
       } else {
         $scope.content = {}
@@ -82,5 +81,4 @@
     
     
   }]);
-
-})();
+});
