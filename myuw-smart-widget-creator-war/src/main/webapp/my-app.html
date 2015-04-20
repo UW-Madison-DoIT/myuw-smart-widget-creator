@@ -5,7 +5,7 @@
      <div class="row"  ng-controller="GenericWidgetController as genericWidgetCtrl">
        <div class="col-sm-6">
         <div class='config'>
-         <h3>Config</h3>
+         <h3>Smart Widget Configuration</h3>
          <form>
            <div class="form-group">
              <label for="title">Title</label>
@@ -36,13 +36,15 @@
              <textarea class="form-control" rows="2"  ng-model="storage.content" id='content'></textarea>
            </div>
          </form>
-         <button ng-click='reload()' class='btn btn-primary'>Refresh*</button><button class='btn btn-neutral' ng-click='clear()'>Clear</button>
+         <div class='config center'>
+            <button ng-click='reload()' class='btn btn-primary' style='margin : 5px;'>Refresh*</button><button class='btn btn-neutral' ng-click='clear()'>Clear</button>
+         </div>
          <p>* : Changes to these fields requires you to click the refresh button to see the changes in the preview</p>
          </div>
        </div>
        <div class="col-sm-6">
          <div class='config center'>
-            <button ng-click='reload()' class='btn btn-primary'>Refresh*</button><button class='btn btn-neutral' ng-click='clear()'>Clear</button>
+            <button ng-click='reload()' class='btn btn-primary' style='margin : 5px;'>Refresh*</button><button class='btn btn-neutral' ng-click='clear()'>Clear</button>
          </div>
          <div class="list-container no-padding output">
            <widget-card></widget-card>
