@@ -1,0 +1,13 @@
+.config {
+  background : lightgray;
+  padding: 5px;
+  border-radius: 5px;
+}
+.output {
+  margin-top:25px;
+  max-width:290px;
+  min-width:230px
+}
+textarea {
+ height:200px !important;
+}
