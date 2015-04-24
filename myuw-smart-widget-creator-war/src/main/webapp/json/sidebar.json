@@ -1,11 +1,11 @@
 
-{"sidebar" :  
+{"sidebar" :
             [
                 {"title": "Widget Creator", "hyperlink" : "/", "target" : "", "faIcon" : "fa-magic", "displayFlag" : ""},
                 {"title": "Sample Widgets", "hyperlink" : "/samples", "target" : "", "faIcon" : "fa-cogs", "displayFlag" : ""},
                 {"title": "Minify HTML", "hyperlink" : "http://www.textfixer.com/html/compress-html-compression.php", "target" : "_blank", "faIcon" : "fa-search-minus", "displayFlag" : ""},
                 {"title": "Format HTML", "hyperlink" : "http://www.freeformatter.com/html-formatter.html#ad-output", "target" : "_blank", "faIcon" : "fa-search-plus", "displayFlag" : ""},
                 {"title": "Beta Settings", "hyperlink" : "/settings", "target" : "", "faIcon" : "fa-cog", "displayFlag" : "sidebarShowSettings"},
-                {"title": "Back to MyUW", "hyperlink" : "/web/", "target" : "", "faIcon" : "fa-home", "displayFlag" : ""}
+                {"title": "Back to MyUW", "hyperlink" : "https://my.wisc.edu", "target" : "_blank", "faIcon" : "fa-home", "displayFlag" : ""}
             ]
 }
