@@ -44,7 +44,7 @@ define(['angular'], function(angular, $) {
       };
       $scope.storage.starterTemplates = [];
 
-      $http.get("/json/starterTemplates.json").then(function(result){
+      $http.get("json/starterTemplates.json").then(function(result){
         $scope.storage.starterTemplates = result.data;
       });
 
