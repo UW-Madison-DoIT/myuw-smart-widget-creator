@@ -18,10 +18,25 @@
  * under the License.
  */
 define(['angular'], function(angular) {
-angular.module('app-config', [])
-.constant('SERVICE_LOC', {
-                           'sessionInfo' : 'json/sessionsample.json',
-                           'sidebarInfo' : 'json/sidebar.json'
-                          });
+
+    var config = angular.module('app-config', []);
+    config
+        .constant('APP_FLAGS', {
+            'enableToggle': true,
+            'defaultView' : 'list',
+            'list' : true,
+            'widgets' : true
+        })
+        .constant('SERVICE_LOC', {
+            'sessionInfo' : 'json/sessionsample.json',
+            'sidebarInfo' : 'json/sidebar.json'
+        })
+        .constant('NAMES', {
+            'title' : 'MyTools'
+        })
+        ;
+
+    return config;
 
 });
+
