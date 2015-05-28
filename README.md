@@ -6,7 +6,7 @@ This simple maven application is a development tool to create smart widgets with
 
 ### Requirements
 
-If you just want to make use it, [a smart widget creator instance is available online](https://tools.my.wisc.edu/widget-creator/).
+If you just want to make use of it, [a smart widget creator instance is available online](https://tools.my.wisc.edu/widget-creator/).
 
 This application assumes you are familiar with Maven, have it installed, and have a settings.xml
 appropriate for interacting with UW's [Maven Artifact Repository](https://wiki.doit.wisc.edu/confluence/pages/viewpage.action?spaceKey=ST&title=Maven+Repository+Manager).
