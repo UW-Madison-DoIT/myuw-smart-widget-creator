@@ -21,22 +21,17 @@ define(['angular'], function(angular) {
 
     var config = angular.module('app-config', []);
     config
-        .constant('APP_FLAGS', {
-            'enableToggle': true,
-            'defaultView' : 'list',
-            'list' : true,
-            'widgets' : true
-        })
         .constant('SERVICE_LOC', {
             'sessionInfo' : 'json/sessionsample.json',
             'sidebarInfo' : 'json/sidebar.json'
         })
         .constant('NAMES', {
-            'title' : 'MyTools'
+            'title' : 'MyTools',
+            'crest' : 'img/uwcrest_web_sm.png',
+            'crestalt' : 'UW Crest'
         })
         ;
 
     return config;
 
 });
-
