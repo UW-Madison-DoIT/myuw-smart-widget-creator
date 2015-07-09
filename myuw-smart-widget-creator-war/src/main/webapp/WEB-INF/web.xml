@@ -44,6 +44,7 @@
       <url-pattern>/settings</url-pattern>
       <url-pattern>/default</url-pattern>
       <url-pattern>/samples</url-pattern>
+      <url-pattern>/home</url-pattern>
   </servlet-mapping>
 </web-app>
 
