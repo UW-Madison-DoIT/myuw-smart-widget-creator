@@ -21,7 +21,9 @@ define([
     'angular',
     'require',
     './samples/route',
+    './home/route',
     './wizard/route',
+    'portal/settings/route',
     'portal',
     'app-config',
     'ngRoute',
@@ -30,7 +32,7 @@ define([
     './samples/controllers',
     './wizard/controllers',
     './wizard/directives',
-], function(angular, require, samplesRoute, wizardRoute) {
+], function(angular, require, samplesRoute, homeRoute, wizardRoute, settingsRoute) {
 
     var app = angular.module('my-app', [
         'app-config',
@@ -49,7 +51,9 @@ define([
         $routeProvider.
             when('/default', wizardRoute).
             when('/samples', samplesRoute).
-            otherwise({ redirectTo : '/default'});
+            when('/home', homeRoute).
+            when('/settings', settingsRoute).
+            otherwise({ redirectTo : '/home'});
     }]);
 
 

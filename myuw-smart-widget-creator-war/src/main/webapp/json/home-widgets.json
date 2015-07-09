@@ -1,0 +1,22 @@
+[
+    { "id": 1, 
+      "title": "MyUW Dev Services", 
+      "template": "<div class='widget-body'> <div class='row'> <div class='col-xs-6 center' ng-repeat='item in content'> <div class='btn btn-primary rounded icon-button text-right'> <a href='{{item.link}}'><i class='fa fa-{{item.icon}}'></i></a> </div> <p>{{item.name}}</p> </div> </div></div>",
+      "content" : "[{\"link\" : \"https://tools.my.wisc.edu/jenkins\",\"name\":\"Jenkins\",\"icon\":\"ship\"},{\"link\" : \"https://tools.my.wisc.edu/mumstatus\",\"name\":\"MyUW Server Status\",\"icon\":\"server\"},{\"link\" : \"/default\",\"name\":\"Widget Creator\",\"icon\":\"magic\"},{\"link\" : \"/samples\",\"name\":\"Sample Widgets\",\"icon\":\"cutlery\"}]"
+    },
+    { "id": 2, 
+      "title": "MyUW Environments", 
+      "template": "<div class='widget-body'> <div class='row'> <div class='col-xs-6 center' ng-repeat='item in content'> <div class='btn btn-primary rounded icon-button text-right'> <a href='{{item.link}}'><i class='fa fa-{{item.icon}}'></i></a> </div> <p>{{item.name}}</p> </div> </div></div>",
+      "content" : "[{\"link\" : \"https://my-predev.doit.wisc.edu\",\"name\":\"Predev\",\"icon\":\"user-secret\"},{\"link\" : \"https://my-test.doit.wisc.edu\",\"name\":\"Test\",\"icon\":\"user-times\"},{\"link\" : \"https://my-qa.wisc.edu\",\"name\":\"QA\",\"icon\":\"user-plus\"}, {\"link\" : \"https://my.wisc.edu\",\"name\":\"Production\",\"icon\":\"users\"}]"
+    },
+    { "id": 3, 
+      "title": "Helpful Links", 
+      "template": "<div class='widget-body'> <div class='row'> <div class='col-xs-6 center' ng-repeat='item in content'> <div class='btn btn-primary rounded icon-button text-right'> <a href='{{item.link}}'><i class='fa fa-{{item.icon}}'></i></a> </div> <p>{{item.name}}</p> </div> </div></div>",
+      "content" : "[{\"link\" : \"https://kb.wisc.edu/myuw/\",\"name\":\"MyUW KB\",\"icon\":\"book\"}, {\"link\" : \"https://kb.wisc.edu/myuw/page.php?id=48181\",\"name\":\"Release Notes\",\"icon\":\"file\"}, {\"link\" : \"https://my.wisc.edu/portal/p/feedback\",\"name\":\"Contact Us\",\"icon\":\"reply\"}]"
+    },
+    { "id": 4, 
+      "title": "Helpful Dev Links", 
+      "template": "<div class='widget-body'> <div class='row'> <div class='col-xs-6 center' ng-repeat='item in content'> <div class='btn btn-primary rounded icon-button text-right'> <a href='{{item.link}}'><i class='fa fa-{{item.icon}}'></i></a> </div> <p>{{item.name}}</p> </div> </div></div>",
+      "content" : "[{\"link\" : \"https://gist.github.com/timlevett/9a829a44f967230cd2a5\",\"name\":\"MyUW Integration Doc\",\"icon\":\"file\"}, {\"link\" : \"http://www.textfixer.com/html/compress-html-compression.php\",\"name\":\"Minify HTML\",\"icon\":\"search-minus\"}, {\"link\" : \"http://www.freeformatter.com/html-formatter.html#ad-output\",\"name\":\"Format HTML\",\"icon\":\"search-plus\"}]"
+    }
+]
