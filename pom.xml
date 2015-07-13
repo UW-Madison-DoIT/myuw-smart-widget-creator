@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>edu.wisc.my.app.widget</groupId>
     <artifactId>myuw-smart-widget-creator</artifactId>
-    <version>1.0.5-SNAPSHOT</version>
+    <version>1.0.5</version>
     <packaging>pom</packaging>
     <name>MyUW Widget Creator Parent</name>
     <description>Dev tools for creating cool stuff.</description>
@@ -17,7 +17,7 @@
         <connection>scm:git:git://github.com/UW-Madison-DoIT/myuw-smart-widget-creator.git</connection>
         <developerConnection>scm:git:git@github.com:UW-Madison-DoIT/myuw-smart-widget-creator.git</developerConnection>
         <url>https://github.com/UW-Madison-DoIT/myuw-smart-widget-creator</url>
-      <tag>HEAD</tag>
+      <tag>1.0.5</tag>
     </scm>
 
     <properties>
