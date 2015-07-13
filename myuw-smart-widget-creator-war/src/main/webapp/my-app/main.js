@@ -30,6 +30,7 @@ define([
     'ngSanitize',
     'ngStorage',
     './samples/controllers',
+    './home/controllers',
     './wizard/controllers',
     './wizard/directives',
 ], function(angular, require, samplesRoute, homeRoute, wizardRoute, settingsRoute) {
@@ -38,6 +39,7 @@ define([
         'app-config',
         'my-app.wizard.controllers',
         'my-app.wizard.directives',
+        'my-app.home.controllers',
         'my-app.samples.controllers',
         'ngRoute',
         'ngSanitize',

@@ -38,7 +38,6 @@ define(['angular'], function(angular, $) {
       $scope.storage.isEmpty = false;
       $scope.storage.template = "";
       $scope.storage.content = "";
-      $scope.storage.showSidebar = false;
       $scope.storage.portlet = {
         title : "My Portlet",
         description : "This super cool portlet can change lives."
@@ -48,11 +47,6 @@ define(['angular'], function(angular, $) {
       $http.get("json/starterTemplates.json").then(function(result){
         $scope.storage.starterTemplates = result.data;
       });
-      
-      $http.get("json/home-widgets.json").then(function(result){
-        $scope.storage.homeWidgets = result.data;
-      });
-
       $scope.storage.inited = true;
     };
 
