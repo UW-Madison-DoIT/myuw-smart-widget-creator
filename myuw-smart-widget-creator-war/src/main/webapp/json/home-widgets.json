@@ -2,7 +2,7 @@
     { "id": 1, 
       "title": "MyUW Dev Services", 
       "template": "<div class='widget-body'> <div class='row'> <div class='col-xs-6 center' ng-repeat='item in content'> <div class='btn btn-primary rounded icon-button text-right'> <a href='{{item.link}}'><i class='fa fa-{{item.icon}}'></i></a> </div> <p>{{item.name}}</p> </div> </div></div>",
-      "content" : "[{\"link\" : \"https://tools.my.wisc.edu/jenkins\",\"name\":\"Jenkins\",\"icon\":\"ship\"},{\"link\" : \"https://tools.my.wisc.edu/mumstatus\",\"name\":\"MyUW Server Status\",\"icon\":\"server\"},{\"link\" : \"/default\",\"name\":\"Widget Creator\",\"icon\":\"magic\"},{\"link\" : \"/samples\",\"name\":\"Sample Widgets\",\"icon\":\"cutlery\"}]"
+      "content" : "[{\"link\" : \"https://tools.my.wisc.edu/jenkins\",\"name\":\"Jenkins\",\"icon\":\"ship\"},{\"link\" : \"https://tools.my.wisc.edu/mumstatus\",\"name\":\"MyUW Server Status\",\"icon\":\"server\"},{\"link\" : \"./default\",\"name\":\"Widget Creator\",\"icon\":\"magic\"},{\"link\" : \"./samples\",\"name\":\"Sample Widgets\",\"icon\":\"cutlery\"}]"
     },
     { "id": 2, 
       "title": "MyUW Environments", 
