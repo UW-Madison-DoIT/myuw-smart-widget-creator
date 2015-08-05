@@ -30,7 +30,7 @@ define(['angular'], function(angular) {
             'welcomeInfo' : 'samples/welcome.json',
             'sidebarInfo' : 'samples/sidebar.json',
             'notificationsURL' : 'samples/notifications.json',
-            'groupURL' : 'json/groups.json'
+            'groupURL' : null
         })
         .constant('NAMES', {
             'title' : 'MyUW',
