@@ -2,7 +2,7 @@
     { "id": 1,
       "title": "MyUW Dev Services",
       "template": "<div class='widget-body'> <div class='row'> <div class='col-xs-6 center' ng-repeat='item in content'> <div class='btn btn-primary rounded icon-button text-right'> <a href='{{item.link}}'><i class='fa fa-{{item.icon}}'></i></a> </div> <p>{{item.name}}</p> </div> </div></div>",
-      "content" : "[{\"link\" : \"https://tools.my.wisc.edu/jenkins\",\"name\":\"Jenkins\",\"icon\":\"ship\"},{\"link\" : \"https://tools.my.wisc.edu/mumstatus\",\"name\":\"MyUW Server Status\",\"icon\":\"server\"},{\"link\" : \"./default\",\"name\":\"Widget Creator\",\"icon\":\"magic\"},{\"link\" : \"./samples\",\"name\":\"Sample Widgets\",\"icon\":\"cutlery\"}]"
+      "content" : "[{\"link\" : \"https://tools.my.wisc.edu/jenkins\",\"name\":\"Jenkins\",\"icon\":\"ship\"},{\"link\" : \"https://tools.my.wisc.edu/mumstatus\",\"name\":\"MyUW Server Status\",\"icon\":\"server\"},{\"link\" : \"https://tools.my.wisc.edu/kibana/\", \"name\":\"Logs\",\"icon\":\"list-alt\"}]"
     },
     { "id": 2,
       "title": "MyUW Environments",
@@ -15,13 +15,18 @@
       "content" : "[{\"link\" : \"https://kb.wisc.edu/myuw/\",\"name\":\"MyUW KB\",\"icon\":\"book\"}, {\"link\" : \"https://kb.wisc.edu/myuw/page.php?id=48181\",\"name\":\"Release Notes\",\"icon\":\"file\"}, {\"link\" : \"https://my.wisc.edu/portal/p/feedback\",\"name\":\"Contact Us\",\"icon\":\"reply\"}]"
     },
     { "id": 4,
-      "title": "Helpful Dev Links",
+      "title": "Helpful Widget Links",
       "template": "<div class='widget-body'> <div class='row'> <div class='col-xs-6 center' ng-repeat='item in content'> <div class='btn btn-primary rounded icon-button text-right'> <a href='{{item.link}}'><i class='fa fa-{{item.icon}}'></i></a> </div> <p>{{item.name}}</p> </div> </div></div>",
-      "content" : "[{\"link\" : \"https://gist.github.com/timlevett/9a829a44f967230cd2a5\",\"name\":\"MyUW Widget Doc\",\"icon\":\"file\"}, {\"link\" : \"http://www.textfixer.com/html/compress-html-compression.php\",\"name\":\"Minify HTML\",\"icon\":\"search-minus\"}, {\"link\" : \"http://www.freeformatter.com/html-formatter.html#ad-output\",\"name\":\"Format HTML\",\"icon\":\"search-plus\"}]"
+      "content" : "[{\"link\" : \"./default\",\"name\":\"Widget Creator\",\"icon\":\"magic\"},{\"link\" : \"./samples\",\"name\":\"Sample Widgets\",\"icon\":\"cutlery\"},{\"link\" : \"https://gist.github.com/timlevett/9a829a44f967230cd2a5\",\"name\":\"MyUW Widget Doc\",\"icon\":\"file\"}]"
     },
     { "id": 5,
       "title": "Frame App Tools",
       "template": "<div class='widget-body'> <div class='row'> <div class='col-xs-6 center' ng-repeat='item in content'> <div class='btn btn-primary rounded icon-button text-right'> <a href='{{item.link}}'><i class='fa fa-{{item.icon}}'></i></a> </div> <p>{{item.name}}</p> </div> </div></div>",
       "content" : "[{\"link\" : \"https://github.com/UW-Madison-DoIT/angularjs-portal\",\"name\":\"angularjs-portal\",\"icon\":\"github\"}, {\"link\" : \"https://github.com/UW-Madison-DoIT/my-app-seed\",\"name\":\"App Seed\",\"icon\":\"pagelines\"}, {\"link\" : \"https://github.com/UW-Madison-DoIT/json-proxy-service\",\"name\":\"JSON Proxy Service\",\"icon\":\"wrench\"}]"
+    },
+    { "id" : 6,
+      "title" : "Misc Dev Tools",
+      "template": "<div class='widget-body'> <div class='row'> <div class='col-xs-6 center' ng-repeat='item in content'> <div class='btn btn-primary rounded icon-button text-right'> <a href='{{item.link}}'><i class='fa fa-{{item.icon}}'></i></a> </div> <p>{{item.name}}</p> </div> </div></div>",
+      "content" : "[{\"link\" : \"http://www.textfixer.com/html/compress-html-compression.php\",\"name\":\"Minify HTML\",\"icon\":\"search-minus\"}, {\"link\" : \"http://www.freeformatter.com/html-formatter.html#ad-output\",\"name\":\"Format HTML\",\"icon\":\"search-plus\"}]"
     }
 ]
