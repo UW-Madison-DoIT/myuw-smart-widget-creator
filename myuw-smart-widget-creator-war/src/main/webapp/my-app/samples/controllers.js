@@ -37,9 +37,9 @@ define(['angular'], function(angular){
       var init = function() {
           $scope.template = $scope.portlet.template;
           var content = $scope.portlet.content;
-
-          if(content && validJSON(content)) {
-              $scope.content = JSON.parse(content);
+          
+          if(content && (validJSON(content) || $scope.portlet.contentIsJSON)) {
+               $scope.content = $scope.portlet.contentIsJSON ? content : JSON.parse(content);
                $scope.isEmpty = false;
           } else {
               $scope.content = {}
