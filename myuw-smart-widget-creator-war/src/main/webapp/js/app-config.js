@@ -34,6 +34,7 @@ define(['angular'], function(angular) {
         })
         .constant('NAMES', {
             'title' : 'MyUW',
+            'ariaLabelTitle' : 'My U W Tools',
             'crest' : 'img/uwcrest_web_sm.png',
             'crestalt' : 'UW Crest',
             'sublogo' : 'MyTools'
