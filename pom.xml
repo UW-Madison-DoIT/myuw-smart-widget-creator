@@ -38,9 +38,9 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>edu.wisc.my.portal.angular</groupId>
-                <artifactId>angularjs-portal-frame</artifactId>
-                <version>4.1.1.26</version>
+                <groupId>edu.wisc.my.apps</groupId>
+                <artifactId>uw-frame</artifactId>
+                <version>1.0.0</version>
                 <type>war</type>
             </dependency>
         </dependencies>
