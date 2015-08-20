@@ -22,7 +22,7 @@
 define(['angular'], function(angular, $) {
   var app = angular.module('my-app.wizard.controllers', []);
 
-  app.controller("GenericWidgetController",['$http', '$scope', '$route', '$localStorage', function($http, $scope, $route, $localStorage){
+  app.controller("GenericWidgetController",['$http', '$scope', '$route', '$localStorage','$firebaseArray', function($http, $scope, $route, $localStorage,$firebaseArray){
     $scope.storage = $localStorage;
 
     var validJSON = function isValidJson(json) {
@@ -42,11 +42,9 @@ define(['angular'], function(angular, $) {
         title : "My Portlet",
         description : "This super cool portlet can change lives."
       };
-      $scope.storage.starterTemplates = [];
 
-      $http.get("json/starterTemplates.json").then(function(result){
-        $scope.storage.starterTemplates = result.data;
-      });
+      var ref = new Firebase("https://myuw-tools.firebaseio.com/samples");
+      $scope.storage.starterTemplates = $firebaseArray(ref);
       $scope.storage.inited = true;
     };
 

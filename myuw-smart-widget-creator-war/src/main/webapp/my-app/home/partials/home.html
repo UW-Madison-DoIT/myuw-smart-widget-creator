@@ -25,14 +25,12 @@
     <div class="portlet-body"  style='background-color: gainsboro;'>
         <div>
         <ul class="tile-list container-fluid row"  ng-controller="HomeController as homeCtrl">
-          
           <li class="col-xs-12 col-sm-6 col-md-4 col-lg-3 no-padding list-container"
-              ng-repeat="portlet in storage.homeWidgets">
+              ng-repeat="portlet in homeWidgets">
               <div ng-controller="WidgetSampleController as widgetSampleCtrl">
                 <widget-card></widget-card>
               </div>
           </li>
-          
         </ul>
       </div>
     </div>

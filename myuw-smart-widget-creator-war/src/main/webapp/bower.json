@@ -1,0 +1,20 @@
+{
+  "name": "widget-creator",
+  "version": "1.0.5",
+  "homepage": "https://github.com/UW-Madison-DoIT/myuw-smart-widget-creator",
+  "authors": [
+    "Tim Levett <levett@wisc.edu>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "firebase": "~2.2.9",
+    "angularfire": "~1.1.2"
+  }
+}
