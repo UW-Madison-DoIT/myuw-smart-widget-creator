@@ -29,10 +29,12 @@ define([
     'ngRoute',
     'ngSanitize',
     'ngStorage',
+    'firebase',
+    'angular-fire',
     './samples/controllers',
     './home/controllers',
     './wizard/controllers',
-    './wizard/directives',
+    './wizard/directives'
 ], function(angular, require, samplesRoute, homeRoute, wizardRoute, settingsRoute) {
 
     var app = angular.module('my-app', [
@@ -41,6 +43,7 @@ define([
         'my-app.wizard.directives',
         'my-app.home.controllers',
         'my-app.samples.controllers',
+        'firebase',
         'ngRoute',
         'ngSanitize',
         'ngStorage',

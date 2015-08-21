@@ -23,17 +23,14 @@ define(['angular'], function(angular){
 
   var app = angular.module('my-app.home.controllers', []);
   
-  app.controller("HomeController", ['$http', '$scope', '$route', '$localStorage', function($http, $scope, $route, $localStorage){
+  app.controller("HomeController", ['$http', '$scope', '$route', '$localStorage','$firebaseArray', function($http, $scope, $route, $localStorage,$firebaseArray){
       var template = "<div class='widget-body'> <div class='row'> <div class='col-xs-6 center' ng-repeat='item in content'> <a href='{{item.link}}'><div class='btn btn-primary rounded icon-button text-right'><i class='fa fa-{{item.icon}}'></i></div></a> <p>{{item.name}}</p> </div> </div></div>";
       var init = function() {
           $scope.storage = $localStorage;
           $scope.storage.showSidebar = false;
-          $http.get("json/home-widgets.json").then(function(result){
-              $scope.storage.homeWidgets = result.data;
-              $scope.storage.homeWidgets.forEach(function(entry){
-                entry.template = template;
-              });
-          });
+          $scope.template = template;
+          var ref = new Firebase("https://myuw-tools.firebaseio.com/home");
+          $scope.homeWidgets = $firebaseArray(ref);
       }
 
       init();
