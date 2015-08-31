@@ -1,7 +1,7 @@
 [
     { "id": 1,
       "title": "MyUW Dev Services",
-      "content" : [{"link" : "https://tools.my.wisc.edu/jenkins","name":"Jenkins","icon":"ship"},{"link" : "https://tools.my.wisc.edu/mumstatus","name":"MyUW Server Status","icon":"server"},{"link" : "https://tools.my.wisc.edu/kibana/", "name":"Logs","icon":"list-alt"}],
+      "content" : [{"link" : "https://tools.my.wisc.edu/jenkins","name":"Jenkins","icon":"ship"},{"link" : "https://tools.my.wisc.edu/mumstatus","name":"MyUW Server Status","icon":"server"},{"link" : "https://logs.my.wisc.edu/kibana/", "name":"Kabana","icon":"list-alt"},{"link" : "https://logs.my.wisc.edu/logs/", "name":"Other Logs","icon":"list-alt"}],
       "contentIsJSON" : true
     },
     { "id": 2,
