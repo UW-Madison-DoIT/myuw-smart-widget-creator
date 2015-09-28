@@ -1,12 +1,12 @@
 [
     { "id": 1,
       "title": "MyUW Dev Services",
-      "content" : [{"link" : "https://tools.my.wisc.edu/jenkins","name":"Jenkins","icon":"fa-ship"},{"link" : "https://tools.my.wisc.edu/mumstatus","name":"MyUW Server Status","icon":"fa-server"},{"link" : "https://logs.my.wisc.edu/kibana/", "name":"Kabana","icon":"fa-list-alt"},{"link" : "https://logs.my.wisc.edu/logs/", "name":"Other Logs","icon":"fa-list-alt"}],
+      "content" : [{"link" : "https://tools.my.wisc.edu/jenkins","name":"Jenkins","icon":"fa-ship"},{"link" : "https://tools.my.wisc.edu/mumstatus","name":"MyUW Server Status","icon":"fa-server"},{"link" : "https://logs.my.wisc.edu/kibana/", "name":"Kibana","icon":"fa-list-alt"},{"link" : "https://logs.my.wisc.edu/logs/", "name":"Other Logs","icon":"fa-list-alt"}],
       "contentIsJSON" : true
     },
     { "id": 2,
       "title": "MyUW Environments",
-      "content" : [{"link" : "https://my-predev.doit.wisc.edu","name":"Predev","icon":"fa-user-secret"},{"link" : "https://my-test.doit.wisc.edu","name":"Test","icon":"fa-user-times"},{"link" : "https://my-qa.wisc.edu","name":"QA","icon":"fa-user-plus"}, {"link" : "https://my.wisc.edu", "name":"Production","icon":"fa-users"}],
+      "content" : [{"link" : "https://predev.my.wisc.edu","name":"Predev","icon":"fa-user-secret"},{"link" : "https://test.my.wisc.edu","name":"Test","icon":"fa-user-times"},{"link" : "https://qa.my.wisc.edu","name":"QA","icon":"fa-user-plus"}, {"link" : "https://my.wisc.edu", "name":"Production","icon":"fa-users"}],
       "contentIsJSON" : true
     },
     { "id": 3,
