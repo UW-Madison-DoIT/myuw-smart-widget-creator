@@ -1,32 +1,32 @@
 [
     { "id": 1,
       "title": "MyUW Dev Services",
-      "content" : [{"link" : "https://tools.my.wisc.edu/jenkins","name":"Jenkins","icon":"ship"},{"link" : "https://tools.my.wisc.edu/mumstatus","name":"MyUW Server Status","icon":"server"},{"link" : "https://logs.my.wisc.edu/kibana/", "name":"Kabana","icon":"list-alt"},{"link" : "https://logs.my.wisc.edu/logs/", "name":"Other Logs","icon":"list-alt"}],
+      "content" : [{"link" : "https://tools.my.wisc.edu/jenkins","name":"Jenkins","icon":"fa-ship"},{"link" : "https://tools.my.wisc.edu/mumstatus","name":"MyUW Server Status","icon":"fa-server"},{"link" : "https://logs.my.wisc.edu/kibana/", "name":"Kabana","icon":"fa-list-alt"},{"link" : "https://logs.my.wisc.edu/logs/", "name":"Other Logs","icon":"fa-list-alt"}],
       "contentIsJSON" : true
     },
     { "id": 2,
       "title": "MyUW Environments",
-      "content" : [{"link" : "https://my-predev.doit.wisc.edu","name":"Predev","icon":"user-secret"},{"link" : "https://my-test.doit.wisc.edu","name":"Test","icon":"user-times"},{"link" : "https://my-qa.wisc.edu","name":"QA","icon":"user-plus"}, {"link" : "https://my.wisc.edu", "name":"Production","icon":"users"}],
+      "content" : [{"link" : "https://my-predev.doit.wisc.edu","name":"Predev","icon":"fa-user-secret"},{"link" : "https://my-test.doit.wisc.edu","name":"Test","icon":"fa-user-times"},{"link" : "https://my-qa.wisc.edu","name":"QA","icon":"fa-user-plus"}, {"link" : "https://my.wisc.edu", "name":"Production","icon":"fa-users"}],
       "contentIsJSON" : true
     },
     { "id": 3,
       "title": "Helpful Links",
-      "content" : [{"link" : "https://kb.wisc.edu/myuw/","name":"MyUW KB","icon":"book"}, {"link" : "https://kb.wisc.edu/myuw/page.php?id=48181","name":"Release Notes","icon":"file"}, {"link" : "https://my.wisc.edu/portal/p/feedback","name":"Contact Us","icon":"reply"}],
+      "content" : [{"link" : "https://kb.wisc.edu/myuw/","name":"MyUW KB","icon":"fa-book"}, {"link" : "https://kb.wisc.edu/myuw/page.php?id=48181","name":"Release Notes","icon":"fa-file"}, {"link" : "https://my.wisc.edu/portal/p/feedback","name":"Contact Us","icon":"fa-reply"}],
       "contentIsJSON" : true
     },
     { "id": 4,
       "title": "Helpful Widget Links",
-      "content" : [{"link" : "./default","name":"Widget Creator","icon":"magic"},{"link" : "./samples","name":"Sample Widgets","icon":"cutlery"},{"link" : "https://gist.github.com/timlevett/9a829a44f967230cd2a5","name":"MyUW Widget Doc","icon":"file"}],
+      "content" : [{"link" : "./default","name":"Widget Creator","icon":"fa-magic"},{"link" : "./samples","name":"Sample Widgets","icon":"fa-cutlery"},{"link" : "https://gist.github.com/timlevett/9a829a44f967230cd2a5","name":"MyUW Widget Doc","icon":"fa-file"}],
       "contentIsJSON" : true
     },
     { "id": 5,
       "title": "Frame App Tools",
-      "content" : [{"link" : "https://github.com/UW-Madison-DoIT/angularjs-portal","name":"angularjs-portal","icon":"github"}, {"link" : "https://github.com/UW-Madison-DoIT/my-app-seed","name":"App Seed","icon":"pagelines"}, {"link" : "https://github.com/UW-Madison-DoIT/json-proxy-service","name":"JSON Proxy Service","icon":"wrench"}],
+      "content" : [{"link" : "https://github.com/UW-Madison-DoIT/angularjs-portal","name":"angularjs-portal","icon":"fa-github"}, {"link" : "https://github.com/UW-Madison-DoIT/my-app-seed","name":"App Seed","icon":"fa-pagelines"}, {"link" : "https://github.com/UW-Madison-DoIT/json-proxy-service","name":"JSON Proxy Service","icon":"fa-wrench"}],
       "contentIsJSON" : true
     },
     { "id" : 6,
       "title" : "Misc Dev Tools",
-      "content" : [{"link" : "http://www.textfixer.com/html/compress-html-compression.php","name":"Minify HTML","icon":"search-minus"}, {"link" : "http://www.freeformatter.com/html-formatter.html#ad-output","name":"Format HTML","icon":"search-plus"},{"link" : "https://jsonformatter.curiousconcept.com/","name":"JSON Validator","icon":"text-height"}],
+      "content" : [{"link" : "http://www.textfixer.com/html/compress-html-compression.php","name":"Minify HTML","icon":"fa-search-minus"}, {"link" : "http://www.freeformatter.com/html-formatter.html#ad-output","name":"Format HTML","icon":"fa-search-plus"},{"link" : "https://jsonformatter.curiousconcept.com/","name":"JSON Validator","icon":"fa-text-height"}],
       "contentIsJSON" : true
     }
 ]
