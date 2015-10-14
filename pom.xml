@@ -40,7 +40,7 @@
             <dependency>
                 <groupId>edu.wisc.my.apps</groupId>
                 <artifactId>uw-frame</artifactId>
-                <version>1.0.2</version>
+                <version>1.1.0</version>
                 <type>war</type>
             </dependency>
         </dependencies>
