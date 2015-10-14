@@ -44,3 +44,4 @@ This app has 2 pages for now:
 
 Created using the my app seed at commit [88fc40594747](https://github.com/UW-Madison-DoIT/my-app-seed/commit/88fc4059474707b8efebca789c4b04def36884d3)
 
+AJAX Calls: Work with the portal team to set up proxy json service to avoid the browser being blocking for a cross-orgin request.  The actual web service must be accessible without headers (shib or otherwise); thus should be protect in other ways like IP restricted, password protected, and/or security certificates.
