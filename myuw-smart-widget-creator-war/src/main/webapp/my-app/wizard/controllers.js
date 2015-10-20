@@ -57,7 +57,7 @@ define(['angular'], function(angular, $) {
 
       if($scope.storage.content && validJSON($scope.storage.content)) {
         $scope.content = JSON.parse($scope.storage.content);
-         $scope.isEmpty = $scope.storage.evalString ? eval($scope.storage.evalString) : false;
+        $scope.isEmpty = $scope.storage.evalString ? eval($scope.storage.evalString) : false;
       } else {
         $scope.content = {}
         $scope.isEmpty = true;
@@ -83,8 +83,14 @@ define(['angular'], function(angular, $) {
     }
 
     $scope.changeTemplate = function() {
-      $scope.storage.template = $scope.storage.starterTemplate.template;
-      $scope.storage.content = $scope.storage.starterTemplate.content;
+      if($scope.storage.starterTemplate.template) {
+        $scope.storage.template = $scope.storage.starterTemplate.template;
+      } else if($scope.storage.starterTemplate.templateURL){
+        $http.get("templates/"+$scope.storage.starterTemplate.templateURL).then(function(result){
+          $scope.storage.template = result.data;
+        });
+      }
+      $scope.storage.content = $scope.storage.starterTemplate.contentIsJSON ? JSON.stringify($scope.storage.starterTemplate.content) : $scope.storage.starterTemplate.content;
       $scope.storage.title= $scope.storage.starterTemplate.title;
     }
   }]);

@@ -1,0 +1,8 @@
+<div class='widget-body'>
+   <div class='row'>
+      <div class='col-xs-6 center' ng-repeat='item in content'>
+         <circle-button data-href='{{item.link}}' data-fa-icon='{{item.icon}}' data-disabled='false' data-title='{{item.name}}'></circle-button>
+      </div>
+   </div>
+</div>
+<a class='btn btn-default launch-app-button ng-scope' href='{{::portlet.url}}' target='{{::portlet.target}}>Launch full app</a>
