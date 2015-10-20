@@ -24,13 +24,14 @@ define(['angular'], function(angular) {
         .constant('APP_FLAGS', {
             'features' : false,
             'showSidebar' : false,
-             'showSearch' : true
+            'showSearch' : true
         })
         .constant('SERVICE_LOC', {
-            'sessionInfo' : 'samples/session.json',
-            'sidebarInfo' : 'samples/sidebar.json',
-            'featuresInfo' : 'samples/features.json',
-            'notificationsURL' : 'samples/notifications.json',
+            'aboutURL' : null,
+            'sessionInfo' : 'json/sessionsample.json',
+            'sidebarInfo' : 'staticFeeds/sidebar.json',
+            'featuresInfo' : 'staticFeeds/features.json',
+            'notificationsURL' : 'staticFeeds/notifications.json',
             'kvURL' : null,
             'groupURL' : null
         })
@@ -54,7 +55,8 @@ define(['angular'], function(angular) {
             'feedbackURL' : 'https://my.wisc.edu/portal/p/feedback',
             'back2ClassicURL' : null,
             'whatsNewURL' : null,
-            'loginURL' : null
+            'loginURL' : null,
+            'logoutURL' : null
         });
 
     return config;

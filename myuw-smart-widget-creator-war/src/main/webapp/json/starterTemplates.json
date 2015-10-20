@@ -1,17 +1,19 @@
 [
     { "id": 1, 
       "title": "List of Links", 
-      "template": "<div class='widget-body'> <div class='row'> <div class='col-xs-6 center' ng-repeat='item in content'> <div class='btn btn-primary rounded icon-button text-right'> <a href='{{item.link}}'><i class='fa fa-{{item.icon}}'></i></a> </div> <p>{{item.name}}</p> </div> </div></div><a class='btn btn-default launch-app-button ng-scope' href='{{::portlet.url}}' target='{{::portlet.target}}>Launch full app</a>",
-      "content" : "[{\"link\" : \"http://www.google.com/\",\"name\":\"Google\",\"icon\":\"google\"},{\"link\" : \"http://www.facebook.com/\",\"name\":\"Facebook\",\"icon\":\"facebook\"},{\"link\" : \"http://www.my.wisc.edu/\",\"name\":\"Student Center\",\"icon\":\"book\"}, {\"link\" : \"http://my.wisc.edu/\",\"name\":\"Learn@UW\",\"icon\":\"at\"}]"
+      "templateURL" : "lol.html",
+      "content" : [{"link" : "https://predev.my.wisc.edu","name":"Predev","icon":"fa-user-secret"},{"link" : "https://test.my.wisc.edu","name":"Test","icon":"fa-user-times"},{"link" : "https://qa.my.wisc.edu","name":"QA","icon":"fa-user-plus"},{"link":"https://my.wisc.edu","name":"Production","icon":"fa-users"}],
+      "contentIsJSON" : true
     },
     { "id": 2, 
       "title": "List of Content", 
-      "template": "<div><ul class='widget-list'><li ng-repeat='item in content'><p class='bold'>{{item.primary}}<span class='right'>{{item.right}}</span></p><p>{{item.secondary}}</p></li></ul></div><a class='btn btn-default launch-app-button ng-scope' href='/portal/p/course-services'>Launch full app</a>",
-      "content" : "[{\"primary\":\"John Doe\",\"right\":\"3:50pm\",\"secondary\":\"I got your message...\"},{\"primary\":\"Chris Madison\",\"right\":\"2:40pm\",\"secondary\":\"I would like to get in contact...\"},{\"primary\":\"Jane Smith\",\"right\":\"1:23pm\",\"secondary\":\"To whom it may concern...\"},{\"primary\":\"Frank Tyson\",\"right\":\"12:48pm\",\"secondary\":\"These widgets are pretty cool...\"},{\"primary\":\"Michael Widget\",\"right\":\"10:34am\",\"secondary\":\"Widgets so easy a caveman could do it...\"}]"
+      "templateURL" : "loc.html",
+      "content" : [{"primary":"John Doe","right":"3:50pm","secondary":"I got your message..."},{"primary":"Chris Madison","right":"2:40pm","secondary":"I would like to get in contact..."},{"primary":"Jane Smith","right":"1:23pm","secondary":"To whom it may concern..."},{"primary":"Frank Tyson","right":"12:48pm","secondary":"These widgets are pretty cool..."},{"primary":"Michael Widget","right":"10:34am","secondary":"Widgets so easy a caveman could do it..."}],
+      "contentIsJSON" : true
     },
     { "id": 3, 
       "title": "Search Plus Link", 
-      "template": "<div><div><div class='widget-body'><form action='http://www.myprofdev.wisc.edu/portal/portal_login.asp' target='_blank'><div class='input-group'><input type='text' name='searchtext' class='form-control' placeholder='Search courses and events'><span class='input-group-btn'><button class='btn btn-primary' type='submit'><i class='fa fa-search'></i></button></span></div></form><div class='row'><div class='col-xs-5 col-xs-offset-1 icon-button-div'><div class='btn btn-primary rounded icon-button'><a href='http://www.myprofdev.wisc.edu/default.asp' target='_blank'><i class='fa fa-at'></i></a></div><p>All Courses and Events</p></div><div class='col-xs-5 icon-button-div'><div class='btn btn-primary rounded icon-button'><a href='http://www.ohrd.wisc.edu/ohrdcatalogportal/LearningTranscript/tabid/57/Default.aspx?ctl=login' target='_blank'><i class='fa fa-envelope-o'></i></a></div><p>My Transcript</p></div></div></div><a class='btn btn-default launch-app-button' href='{{::portlet.url}}' target='{{::portlet.target}}'>Launch full app</a></div></div>",
+      "templateURL" : "search.html",
       "content" : ""
     }
 ]
