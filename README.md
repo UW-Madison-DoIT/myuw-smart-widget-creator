@@ -1,7 +1,5 @@
 ## MyUW Widget Creator
 
-![https://travis-ci.org/UW-Madison-DoIT/myuw-smart-widget-creator.svg?branch=master](https://travis-ci.org/UW-Madison-DoIT/myuw-smart-widget-creator.svg?branch=master)
-
 This simple application is a development tool to create widgets without having the burden of trying to startup your own uPortal instance.
 
 ### Requirements
