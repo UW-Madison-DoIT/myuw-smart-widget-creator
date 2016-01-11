@@ -36,7 +36,7 @@ define(['angular'], function(angular) {
             'loginURL' : 'https://my.wisc.edu/portal/Login?profile=bucky',
             'logoutURL' : 'https://my.wisc.edu',
             'myuwHome' : 'https://my.wisc.edu',
-            'rootURL' : ''
+            'rootURL' : '#/'
 
         })
         .constant('FOOTER_URLS', [
