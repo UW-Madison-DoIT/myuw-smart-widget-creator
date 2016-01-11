@@ -1,0 +1,40 @@
+{
+  "name": "myuw-widget-creator",
+  "version": "1.0.0",
+  "description": "widget creator",
+  "scripts": {
+    "prebuild-wc": "npm install",
+    "build-wc": "./build.sh",
+    "clean": "rm -rf target",
+    "predocker-rebuild" : "npm run build-wc",
+    "docker-rebuild" : "./docker-rebuild.sh",
+    "docker" : "docker build -t myuw/wc ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UW-Madison-DoIT/uw-frame.git"
+  },
+  "keywords": [
+    "uw-frame",
+    "UW-Madison",
+    "frame",
+    "angularjs"
+  ],
+  "contributors": [
+    {
+      "name": "Tim Levett",
+      "email": "tim.levett@wisc.edu"
+    }
+  ],
+  "license": {
+    "type": "Apache-2.0",
+    "url": "https://github.com/UW-Madison-DoIT/uw-frame/blob/master/LICENSE"
+  },
+  "bugs": {
+    "url": "https://github.com/UW-Madison-DoIT/uw-frame/issues"
+  },
+  "homepage": "https://github.com/UW-Madison-DoIT/uw-frame",
+  "dependencies": {
+    "uw-frame": "^2.0.1"
+  }
+}

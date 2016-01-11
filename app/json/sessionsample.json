@@ -1,9 +1,10 @@
 {
   "person": {
    "userName": "nil",
-   "sessionKey": "sessionKeyPlaceholder",
+   "sessionKey": "",
    "serverName": "local",
    "displayName": "MyUW Wizard",
-   "version": "4.1.1.23"
+   "firstName" : "MyUW",
+   "version": "2.0.1"
   }
 }
