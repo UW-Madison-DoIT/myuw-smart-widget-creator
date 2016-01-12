@@ -11,12 +11,12 @@
     },
     { "id": 3,
       "title": "Helpful Links",
-      "content" : [{"link" : "https://kb.wisc.edu/myuw/","name":"MyUW KB","icon":"fa-book"}, {"link" : "https://kb.wisc.edu/myuw/page.php?id=48181","name":"Release Notes","icon":"fa-file"}, {"link" : "https://my.wisc.edu/portal/p/feedback","name":"Contact Us","icon":"fa-reply"}],
+      "content" : [{"link" : "https://kb.wisc.edu/myuw/","name":"MyUW KB","icon":"fa-book"}, {"link" : "https://kb.wisc.edu/myuw/page.php?id=48181","name":"Release Notes","icon":"fa-file"}, {"link" : "https://my.wisc.edu/portal/p/feedback","name":"Contact Us","icon":"fa-reply"},{"link" : "http://uw-madison-doit.github.io/uw-frame/","name":"uw-frame docs","icon":"fa-file"}],
       "contentIsJSON" : true
     },
     { "id": 4,
       "title": "Helpful Widget Links",
-      "content" : [{"link" : "./default","name":"Widget Creator","icon":"fa-magic"},{"link" : "./samples","name":"Sample Widgets","icon":"fa-cutlery"},{"link" : "https://gist.github.com/timlevett/9a829a44f967230cd2a5","name":"MyUW Widget Doc","icon":"fa-file"}],
+      "content" : [{"link" : "#/default","name":"Widget Creator","icon":"fa-magic"},{"link" : "#/samples","name":"Sample Widgets","icon":"fa-cutlery"},{"link" : "http://uw-madison-doit.github.io/uw-frame/latest/#/md/widgets","name":"MyUW Widget Doc","icon":"fa-file"}],
       "contentIsJSON" : true
     },
     { "id": 5,
