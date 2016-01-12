@@ -6,7 +6,7 @@
 
 ## Build static hack until we fix bower install on frame to run with root if needed
 
-cd node_modules/uw-frame
+pushd node_modules/uw-frame
 npm install
 ## Reset
 rm -rf target
@@ -28,12 +28,11 @@ popd
 
 grunt
 
-cd ../../
-
 ## Build less
 ../node_modules/less/bin/lessc -x target/css/themes/uw-madison.less > target/css/themes/uw-madison.css
 ../node_modules/less/bin/lessc -x target/css/themes/uw-system.less > target/css/themes/uw-system.css
 
+popd
 ## Copy static to target
 rm -rf dist
 mkdir dist
