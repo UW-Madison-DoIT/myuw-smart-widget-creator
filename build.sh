@@ -33,8 +33,6 @@ popd
 
 popd
 
-grunt
-
 popd
 ## Copy static to target
 rm -rf dist
@@ -43,3 +41,6 @@ cp -r node_modules/uw-frame/uw-frame-static/target/* ./dist/
 
 ## Overlay my-app
 cp -r app/* dist/
+
+## Create index.html
+grunt
