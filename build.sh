@@ -1,4 +1,4 @@
-
+#!/bin/bash
 ## Build static
 # cd node_modules/uw-frame
 # npm run build-static
@@ -8,6 +8,7 @@
 
 pushd node_modules/uw-frame
 npm install
+pushd uw-frame-static
 ## Reset
 rm -rf target
 mkdir -p target
@@ -26,11 +27,13 @@ pushd target
 ../../node_modules/bower/bin/bower --config.interactive=false --allow-root install
 popd
 
-grunt
-
 ## Build less
 ../node_modules/less/bin/lessc -x target/css/themes/uw-madison.less > target/css/themes/uw-madison.css
 ../node_modules/less/bin/lessc -x target/css/themes/uw-system.less > target/css/themes/uw-system.css
+
+popd
+
+grunt
 
 popd
 ## Copy static to target
