@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/UW-Madison-DoIT/uw-frame",
   "dependencies": {
-    "uw-frame": "^2.0.1",
+    "uw-frame": "2.0.2",
     "grunt": "^0.4.5",
     "grunt-processhtml": "^0.3.8"
   }
