@@ -1,0 +1,19 @@
+<frame-page app-title="release note generator" white-background='true'>
+  <div class='form-group'>
+    <label>From Date (YYYY-MM-DD) :</label>
+    <input type='text' ng-model='query.fromDate'  class="form-control">
+    <button class='btn btn-primary' ng-click='refresh()'>Refresh Merged Pulls</button>
+  </div>
+
+  <div>
+    Total Count : {{pulls.total_count}}<br/>
+    Listed Count: {{pulls.items.length}}
+  </div>
+
+  <div ng-repeat="item in pulls.items | orderBy:number">
+    #{{item.number}} : {{item.title}}
+    <div ng-repeat="label in item.labels">
+      + {{label.name}}
+    </div>
+  </div>
+</frame-page>

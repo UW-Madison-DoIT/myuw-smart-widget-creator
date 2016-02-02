@@ -8,7 +8,9 @@
     "clean": "rm -rf target",
     "predocker-rebuild" : "npm run build-wc",
     "docker-rebuild" : "./docker-rebuild.sh",
-    "docker" : "docker build -t myuw/wc ."
+    "docker" : "docker build -t myuw/wc .",
+    "prewc" : "npm run build-wc",
+    "wc" : "cd dist && http-server"
   },
   "repository": {
     "type": "git",
