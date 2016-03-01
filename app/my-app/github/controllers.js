@@ -26,7 +26,7 @@ define(['angular'], function(angular){
   app.controller("ReleaseNoteController", ['$http', '$scope', '$route', '$localStorage', function($http, $scope, $route, $localStorage){
     $scope.refresh = function(){
       $scope.loading=true;
-      $http.jsonp('https://api.github.com/search/issues?q=repo:'+$scope.user+'/'+$scope.repo+'%20merged:%3E' + $scope.query.fromDate + '&callback=JSON_CALLBACK').then(
+      $http.jsonp('https://api.github.com/search/issues?q=repo:'+$scope.user+'/'+$scope.repo+'%20merged:%3E' + $scope.fromDate + '&callback=JSON_CALLBACK').then(
         function(result){
           $scope.loading=false;
           $scope.pulls = result.data.data;
@@ -45,8 +45,7 @@ define(['angular'], function(angular){
       $scope.pulls = {};
       $scope.user = 'uw-madison-doit';
       $scope.repo = 'uw-frame';
-      $scope.query = {};
-      $scope.query.fromDate = '2016-01-01'
+      $scope.fromDate = '2016-01-01'
       $scope.status = {
         opened: false
       };

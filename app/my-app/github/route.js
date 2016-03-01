@@ -19,7 +19,6 @@
  */
 define(['require'], function(require){
   return {
-           templateUrl: require.toUrl('./partials/release-note-generator.html'),
-           controller: 'ReleaseNoteController'
+           templateUrl: require.toUrl('./partials/release-note-generator.html')
          }
 });
