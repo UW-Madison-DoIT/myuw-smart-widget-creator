@@ -1,19 +1,26 @@
 <frame-page app-title="release note generator" white-background='true'>
-  <div class='form-group'>
-    <label>From Date (YYYY-MM-DD) :</label>
-    <input type='text' ng-model='query.fromDate'  class="form-control">
-    <button class='btn btn-primary' ng-click='refresh()'>Refresh Merged Pulls</button>
-  </div>
+  <div style='padding: 10px'>
+    <div class='form-group rn-form'>
+      <label>From Date (YYYY-MM-DD) :</label>
+      <p class='input-group' >
+        <input type="text" class="form-control" datepicker-popup="''yyyy-MM-dd'" ng-model="query.fromDate" is-open="status.opened" ng-required="true" close-text="Close" />
+        <span class="input-group-btn">
+          <button type="button" class="btn btn-default" ng-click="open($event)"><i class="fa fa-calendar"></i></button>
+        </span>
+      </p>
+      <button class='btn btn-primary' ng-click='refresh()'>Refresh Merged Pulls <i ng-if='loading' class='fa fa-spin fa-circle-o-notch'></i> </button>
+    </div>
 
-  <div>
-    Total Count : {{pulls.total_count}}<br/>
-    Listed Count: {{pulls.items.length}}
-  </div>
+    <div>
+      Total Count : {{pulls.total_count}}<br/>
+      Listed Count: {{pulls.items.length}}
+    </div>
 
-  <div ng-repeat="item in pulls.items | orderBy:number">
-    #{{item.number}} : {{item.title}}
-    <div ng-repeat="label in item.labels">
-      + {{label.name}}
+    <div ng-repeat="item in pulls.items | orderBy:number">
+      #{{item.number}} : {{item.title}}
+      <div ng-repeat="label in item.labels">
+        + {{label.name}}
+      </div>
     </div>
   </div>
 </frame-page>

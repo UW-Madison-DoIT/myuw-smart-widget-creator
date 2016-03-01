@@ -30,3 +30,10 @@
 textarea {
  height:200px !important;
 }
+
+.rn-form {
+  border-radius: 5px;
+  padding: 8px;
+  background-color: gainsboro;
+  box-shadow: 4px 4px 4px lightgray;
+}
