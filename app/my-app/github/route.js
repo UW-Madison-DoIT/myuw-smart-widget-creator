@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright 2012, Board of Regents of the University of
  * Wisconsin System. See the NOTICE file distributed with
  * this work for additional information regarding copyright
@@ -17,25 +17,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-.config {
-  background : lightgray;
-  padding: 5px;
-  border-radius: 5px;
-}
-.output {
-  margin-top:25px;
-  max-width:290px;
-  min-width:230px
-}
-textarea {
- height:200px !important;
-}
-
-.rn-form {
-  border-radius: 5px;
-  padding: 8px;
-  background-color: gainsboro;
-  box-shadow: 4px 4px 4px lightgray;
-  margin-left: 10px;
-  margin-right: 10px;
-}
+define(['require'], function(require){
+  return {
+           templateUrl: require.toUrl('./partials/release-note-generator.html')
+         }
+});

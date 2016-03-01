@@ -23,6 +23,7 @@ define([
     './samples/route',
     './home/route',
     './wizard/route',
+    './github/route',
     'portal/settings/route',
     'portal',
     'app-config',
@@ -33,7 +34,8 @@ define([
     './home/controllers',
     './wizard/controllers',
     './wizard/directives',
-], function(angular, require, samplesRoute, homeRoute, wizardRoute, settingsRoute) {
+    './github/controllers'
+], function(angular, require, samplesRoute, homeRoute, wizardRoute, githubRoute, settingsRoute) {
 
     var app = angular.module('my-app', [
         'app-config',
@@ -41,6 +43,7 @@ define([
         'my-app.wizard.directives',
         'my-app.home.controllers',
         'my-app.samples.controllers',
+        'my-app.github.controllers',
         'ngRoute',
         'ngSanitize',
         'ngStorage',
@@ -54,6 +57,7 @@ define([
             when('/samples', samplesRoute).
             when('/home', homeRoute).
             when('/settings', settingsRoute).
+            when('/gh', githubRoute).
             otherwise({ redirectTo : '/home'});
     }]);
 

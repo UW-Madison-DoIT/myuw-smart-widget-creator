@@ -1,9 +1,11 @@
 #!/bin/bash
-## Build static
-pushd node_modules/uw-frame
-  npm run build-static
-popd
 
+if [ "$1" = "y" ]; then
+  ## Build static
+  pushd node_modules/uw-frame
+    npm run build-static
+  popd
+fi
 ## Copy static to target
 rm -rf dist
 mkdir dist
