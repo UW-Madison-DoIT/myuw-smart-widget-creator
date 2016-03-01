@@ -26,7 +26,7 @@
     },
     { "id" : 6,
       "title" : "Misc Dev Tools",
-      "content" : [{"link" : "http://www.textfixer.com/html/compress-html-compression.php","name":"Minify HTML","icon":"fa-search-minus"}, {"link" : "http://www.freeformatter.com/html-formatter.html#ad-output","name":"Format HTML","icon":"fa-search-plus"},{"link" : "https://jsonformatter.curiousconcept.com/","name":"JSON Validator","icon":"fa-text-height"}],
+      "content" : [{"link" : "http://www.textfixer.com/html/compress-html-compression.php","name":"Minify HTML","icon":"fa-search-minus"}, {"link" : "http://www.freeformatter.com/html-formatter.html#ad-output","name":"Format HTML","icon":"fa-search-plus"},{"link" : "https://jsonformatter.curiousconcept.com/","name":"JSON Validator","icon":"fa-text-height"},{"link" : "#/gh","name":"Github Release Note Generator","icon":"fa-github"}],
       "contentIsJSON" : true
     }
 ]
