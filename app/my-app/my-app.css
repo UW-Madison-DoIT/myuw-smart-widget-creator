@@ -36,4 +36,6 @@ textarea {
   padding: 8px;
   background-color: gainsboro;
   box-shadow: 4px 4px 4px lightgray;
+  margin-left: 10px;
+  margin-right: 10px;
 }
