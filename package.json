@@ -7,7 +7,7 @@
     "build-wc": "./build.sh y",
     "rebuild-wc": "./build.sh",
     "clean": "rm -rf dist",
-    "predocker-rebuild" : "npm run build-wc",
+    "predocker-rebuild" : "npm install && ./build.sh",
     "docker-rebuild" : "./docker-rebuild.sh",
     "docker" : "docker build -t myuw/wc .",
     "prewc" : "npm run build-wc",

@@ -1,5 +1,5 @@
 define(['angular'], function(angular) {
-  
+
   /*Keep in sync with docs/mardown/configuration.md*/
 
     var config = angular.module('app-config', []);
@@ -21,6 +21,8 @@ define(['angular'], function(angular) {
         .constant('NAMES', {
             'title' : 'MyUW Tools',
             'guestUserName' : 'guest'
+        })
+        .constant('FEATURES', {
         })
         .constant('SEARCH',{
             'searchURL' : 'https://my.wisc.edu/web/apps/search/'
