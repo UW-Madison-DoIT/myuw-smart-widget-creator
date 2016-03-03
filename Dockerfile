@@ -1,7 +1,3 @@
-FROM node:0.10-slim
-RUN npm install -g http-server
+FROM timlevett/uw-frame-superstatic
 
-ADD dist /data
-WORKDIR /data
-
-ENTRYPOINT ["http-server","/data", "-p","8009"]
+COPY app /data/
