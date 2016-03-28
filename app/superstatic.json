@@ -1,0 +1,5 @@
+{
+  "rewrites" : [
+    {"source":"/widget-creator", "destination" : "index.html"}
+  ]
+}
