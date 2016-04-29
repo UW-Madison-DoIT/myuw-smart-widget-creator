@@ -13,5 +13,10 @@
       "title": "Search Plus Link", 
       "template": "<div><div><div class='widget-body'><form action='http://www.myprofdev.wisc.edu/portal/portal_login.asp' target='_blank'><div class='input-group'><input type='text' name='searchtext' class='form-control' placeholder='Search courses and events'><span class='input-group-btn'><button class='btn btn-primary' type='submit'><i class='fa fa-search'></i></button></span></div></form><div class='row'><div class='col-xs-5 col-xs-offset-1 icon-button-div'><div class='btn btn-primary rounded icon-button'><a href='http://www.myprofdev.wisc.edu/default.asp' target='_blank'><i class='fa fa-at'></i></a></div><p>All Courses and Events</p></div><div class='col-xs-5 icon-button-div'><div class='btn btn-primary rounded icon-button'><a href='http://www.ohrd.wisc.edu/ohrdcatalogportal/LearningTranscript/tabid/57/Default.aspx?ctl=login' target='_blank'><i class='fa fa-envelope-o'></i></a></div><p>My Transcript</p></div></div></div><a class='btn btn-default launch-app-button' href='{{::portlet.url}}' target='{{::portlet.target}}'>Launch full app</a></div></div>",
       "content" : ""
+    },
+    { "id": 4, 
+      "title": "Developer Documentation", 
+      "template": "<div class='widget-body'> <div class='row'> <div class='col-xs-6 center' ng-repeat='item in content'> <div class='btn btn-primary rounded icon-button text-right'> <a href='{{item.link}}'><i class='fa fa-{{item.icon}}'></i></a> </div> <p>{{item.name}}</p> </div> </div></div>",
+      "content" : ""
     }
 ]
