@@ -9,7 +9,7 @@ If you just want to make use of it, [a widget creator instance is available onli
 This application assumes you are familiar with Maven, have it installed, and have a settings.xml
 appropriate for interacting with UW's [Maven Artifact Repository](https://wiki.doit.wisc.edu/confluence/pages/viewpage.action?spaceKey=ST&title=Maven+Repository+Manager).
 
-#### Permanant Home
+#### Permanent Home
 
 * [MyUW hosts a Widget Creator instance among its supporting tools](https://tools.my.wisc.edu/widget-creator/)
 
